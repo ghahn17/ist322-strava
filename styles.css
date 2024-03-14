@@ -1,0 +1,115 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #FC4C02; /* Strava orange */
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.featured-activities,
+.download-app,
+.login,
+.premium-features {
+    margin-bottom: 40px;
+}
+
+.featured-activities h2,
+.download-app h2,
+.login h2,
+.premium-features h2 {
+    margin-bottom: 20px;
+}
+
+.activity {
+    margin-bottom: 20px;
+}
+
+.activity img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.activity p {
+    margin-bottom: 10px;
+}
+
+.activity a {
+    display: inline-block;
+    background-color: #FC4C02; /* Strava orange */
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.download-app ul,
+.download-app form {
+    margin-top: 20px;
+}
+
+.download-app ul li,
+.login label,
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="submit"],
+.premium-features ul li {
+    margin-bottom: 10px;
+}
+
+.download-app ul li a,
+.login input[type="submit"],
+.premium-features a {
+    display: inline-block;
+    background-color: #FC4C02; /* Strava orange */
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.login label {
+    display: block;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+}
+
+.login input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+.premium-features ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
