@@ -1,115 +1,110 @@
-/* Reset some default browser styles */
-body, h1, h2, p, ul, li, form {
-    margin: 0;
-    padding: 0;
-}
+
+/* General styles */
 
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #060606 ;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background-color: #FC4C02; /* Strava orange */
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FC4C02 ;
     color: #fff;
-    padding: 20px;
 }
 
-nav ul {
-    list-style-type: none;
+h1 {
+    margin: 0;
+    font-size: 36px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+/* Hero section styles */
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-nav ul li a {
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #fc4c02;
     color: #fff;
     text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-main {
-    padding: 20px;
+.cta-btn:hover {
+    background-color: #e03c02;
 }
 
-.featured-activities,
-.download-app,
-.login,
-.premium-features {
-    margin-bottom: 40px;
+/* Photo section styles */
+
+.photo-section {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.featured-activities h2,
-.download-app h2,
-.login h2,
-.premium-features h2 {
-    margin-bottom: 20px;
-}
-
-.activity {
-    margin-bottom: 20px;
-}
-
-.activity img {
+.photo img {
     max-width: 100%;
     height: auto;
-    display: block;
+    border-radius: 5px;
+}
+
+/* Features section styles */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.feature {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    color: #333;
     margin-bottom: 10px;
 }
 
-.activity p {
-    margin-bottom: 10px;
+.feature p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.activity a {
-    display: inline-block;
-    background-color: #FC4C02; /* Strava orange */
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
+/* Signup section styles */
+
+.signup {
+    text-align: center;
 }
 
-.download-app ul,
-.download-app form {
-    margin-top: 20px;
-}
-
-.download-app ul li,
-.login label,
-.login input[type="text"],
-.login input[type="password"],
-.login input[type="submit"],
-.premium-features ul li {
-    margin-bottom: 10px;
-}
-
-.download-app ul li a,
-.login input[type="submit"],
-.premium-features a {
-    display: inline-block;
-    background-color: #FC4C02; /* Strava orange */
-    color: #fff;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.login label {
-    display: block;
-}
-
-.login input[type="text"],
-.login input[type="password"],
-.login input[type="submit"] {
-    width: 100%;
-    padding: 8px;
-}
-
-.login input[type="submit"] {
-    border: none;
-    cursor: pointer;
-}
-
-.premium-features ul {
-    list-style-type: disc;
-    margin-left: 20px;
+.signup h2 {
+    margin-bottom: 20px;
 }
